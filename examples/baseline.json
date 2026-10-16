@@ -1,0 +1,415 @@
+{
+  "config": {
+    "version": "synthetic-demo",
+    "rootDir": "/demo",
+    "projects": []
+  },
+  "suites": [
+    {
+      "title": "tests/shop.spec.js",
+      "file": "tests/shop.spec.js",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Shop workflow",
+          "file": "tests/shop.spec.js",
+          "line": 1,
+          "column": 1,
+          "specs": [
+            {
+              "title": "Checkout returns a successful response",
+              "file": "tests/shop.spec.js",
+              "line": 12,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": true,
+              "id": "Checkout returns a successful response",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "expected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "passed",
+                      "duration": 425,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Catalog is reachable",
+              "file": "tests/shop.spec.js",
+              "line": 29,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": false,
+              "id": "Catalog is reachable",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "unexpected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "failed",
+                      "duration": 3000,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [
+                        {
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": [
+                        {
+                          "title": "Validate expected state",
+                          "duration": 3000,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Search is reachable",
+              "file": "tests/shop.spec.js",
+              "line": 45,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": false,
+              "id": "Search is reachable",
+              "tests": [
+                {
+                  "projectName": "firefox",
+                  "projectId": "firefox",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "unexpected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "failed",
+                      "duration": 3000,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [
+                        {
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": [
+                        {
+                          "title": "Validate expected state",
+                          "duration": 3000,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Receipt appears after payment",
+              "file": "tests/shop.spec.js",
+              "line": 62,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": true,
+              "id": "Receipt appears after payment",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "expected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "passed",
+                      "duration": 425,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Login accepts valid credentials",
+              "file": "tests/shop.spec.js",
+              "line": 77,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": true,
+              "id": "Login accepts valid credentials",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "expected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "passed",
+                      "duration": 425,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Profile changes are saved",
+              "file": "tests/shop.spec.js",
+              "line": 92,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": false,
+              "id": "Profile changes are saved",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "unexpected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "failed",
+                      "duration": 3000,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [
+                        {
+                          "message": "Expected: Saved\nReceived: Error"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": [
+                        {
+                          "title": "Validate expected state",
+                          "duration": 3000,
+                          "error": {
+                            "message": "Expected: Saved\nReceived: Error"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Refund workflow",
+              "file": "tests/shop.spec.js",
+              "line": 107,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": true,
+              "id": "Refund workflow",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "skipped",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "skipped",
+                      "duration": 3000,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": [
+                        {
+                          "title": "Validate expected state",
+                          "duration": 3000,
+                          "error": {
+                            "message": ""
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Known tax rounding limitation",
+              "file": "tests/shop.spec.js",
+              "line": 125,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": true,
+              "id": "Known tax rounding limitation",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "failed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "expected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "failed",
+                      "duration": 425,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [
+                        {
+                          "message": "Expected: 10.25\nReceived: 10.24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Legacy address validation",
+              "file": "tests/shop.spec.js",
+              "line": 155,
+              "column": 1,
+              "tags": [
+                "@demo"
+              ],
+              "ok": false,
+              "id": "Legacy address validation",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "projectId": "chromium",
+                  "expectedStatus": "passed",
+                  "timeout": 30000,
+                  "annotations": [],
+                  "status": "unexpected",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "retry": 0,
+                      "status": "failed",
+                      "duration": 3000,
+                      "startTime": "2026-10-16T10:00:00.000Z",
+                      "errors": [
+                        {
+                          "message": "Expected: valid\nReceived: invalid"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "attachments": [],
+                      "steps": [
+                        {
+                          "title": "Validate expected state",
+                          "duration": 3000,
+                          "error": {
+                            "message": "Expected: valid\nReceived: invalid"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T10:00:00.000Z",
+    "duration": 15000
+  }
+}

@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "tool": "QA Signal",
+  "generatedAt": "2026-10-16T12:11:14.862Z",
+  "label": "Fictional shop · Regression run",
+  "hasBaseline": true,
+  "verdict": "FAILURES",
+  "counts": {
+    "passed": 2,
+    "failed": 4,
+    "flaky": 1,
+    "skipped": 1,
+    "expected-failure": 1,
+    "unexpected-pass": 0,
+    "interrupted": 0,
+    "not-run": 0
+  },
+  "total": 9,
+  "changes": {
+    "regression": 2,
+    "recurring": 2,
+    "recovered": 1,
+    "new-test": 1,
+    "unverified": 0
+  },
+  "tests": [
+    {
+      "id": "17fa510e48f72d25",
+      "title": "Shop workflow > Checkout returns a successful response",
+      "file": "tests/shop.spec.js",
+      "line": 15,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "failed"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "failed",
+          "durationMs": 3000,
+          "errors": [
+            "Error: expect(received).toBe(expected)\nExpected: 200\nReceived: 500"
+          ],
+          "failedSteps": [
+            {
+              "title": "Validate expected state",
+              "error": "Error: expect(received).toBe(expected)\nExpected: 200\nReceived: 500"
+            }
+          ],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "failed",
+      "mixedOutcomes": false,
+      "durationMs": 3000,
+      "error": "Error: expect(received).toBe(expected)\nExpected: 200\nReceived: 500",
+      "triage": {
+        "category": "Assertion mismatch",
+        "confidence": "medium",
+        "next": "Compare expected and actual behavior against the requirement. Inspect trace, data, and locator before filing a defect."
+      },
+      "previousOutcome": "passed",
+      "change": "regression"
+    },
+    {
+      "id": "22abe16ef3a834de",
+      "title": "Shop workflow > Catalog is reachable",
+      "file": "tests/shop.spec.js",
+      "line": 32,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "failed"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "failed",
+          "durationMs": 3000,
+          "errors": [
+            "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+          ],
+          "failedSteps": [
+            {
+              "title": "Validate expected state",
+              "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+            }
+          ],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "failed",
+      "mixedOutcomes": false,
+      "durationMs": 3000,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog",
+      "triage": {
+        "category": "Environment or network",
+        "confidence": "medium",
+        "next": "Check service reachability, baseURL, DNS, and CI network logs. This symptom does not establish an application defect."
+      },
+      "previousOutcome": "failed",
+      "change": "recurring"
+    },
+    {
+      "id": "b3ca6335d599e419",
+      "title": "Shop workflow > Search is reachable",
+      "file": "tests/shop.spec.js",
+      "line": 48,
+      "project": "firefox",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "failed"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "failed",
+          "durationMs": 3000,
+          "errors": [
+            "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+          ],
+          "failedSteps": [
+            {
+              "title": "Validate expected state",
+              "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog"
+            }
+          ],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "failed",
+      "mixedOutcomes": false,
+      "durationMs": 3000,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog",
+      "triage": {
+        "category": "Environment or network",
+        "confidence": "medium",
+        "next": "Check service reachability, baseURL, DNS, and CI network logs. This symptom does not establish an application defect."
+      },
+      "previousOutcome": "failed",
+      "change": "recurring"
+    },
+    {
+      "id": "af87797eac4c5f84",
+      "title": "Shop workflow > Receipt appears after payment",
+      "file": "tests/shop.spec.js",
+      "line": 65,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "flaky"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "failed",
+          "durationMs": 3000,
+          "errors": [
+            "TimeoutError: locator.waitFor: Timeout 3000ms exceeded."
+          ],
+          "failedSteps": [
+            {
+              "title": "Validate expected state",
+              "error": "TimeoutError: locator.waitFor: Timeout 3000ms exceeded."
+            }
+          ],
+          "attachments": []
+        },
+        {
+          "repetition": 1,
+          "retry": 1,
+          "status": "passed",
+          "durationMs": 425,
+          "errors": [],
+          "failedSteps": [],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "flaky",
+      "mixedOutcomes": false,
+      "durationMs": 3425,
+      "error": "TimeoutError: locator.waitFor: Timeout 3000ms exceeded.",
+      "triage": {
+        "category": "Timeout",
+        "confidence": "low",
+        "next": "Review the failing step, trace, network, and page state. Check app readiness and locator correctness; do not simply increase the timeout."
+      },
+      "previousOutcome": "passed",
+      "change": "regression"
+    },
+    {
+      "id": "c674c0680b84a7e9",
+      "title": "Shop workflow > Login accepts valid credentials",
+      "file": "tests/shop.spec.js",
+      "line": 80,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "passed"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "passed",
+          "durationMs": 425,
+          "errors": [],
+          "failedSteps": [],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "passed",
+      "mixedOutcomes": false,
+      "durationMs": 425,
+      "error": "",
+      "triage": {
+        "category": "Needs investigation",
+        "confidence": "low",
+        "next": "Inspect the original run and available evidence. There is insufficient information to infer a cause."
+      },
+      "previousOutcome": "passed",
+      "change": "unchanged"
+    },
+    {
+      "id": "3265f4abcd1469cd",
+      "title": "Shop workflow > Profile changes are saved",
+      "file": "tests/shop.spec.js",
+      "line": 95,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "passed"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "passed",
+          "durationMs": 425,
+          "errors": [],
+          "failedSteps": [],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "passed",
+      "mixedOutcomes": false,
+      "durationMs": 425,
+      "error": "",
+      "triage": {
+        "category": "Needs investigation",
+        "confidence": "low",
+        "next": "Inspect the original run and available evidence. There is insufficient information to infer a cause."
+      },
+      "previousOutcome": "failed",
+      "change": "recovered"
+    },
+    {
+      "id": "9ac99f6c9012d949",
+      "title": "Shop workflow > Refund workflow",
+      "file": "tests/shop.spec.js",
+      "line": 110,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "skipped"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "skipped",
+          "durationMs": 3000,
+          "errors": [],
+          "failedSteps": [
+            {
+              "title": "Validate expected state",
+              "error": ""
+            }
+          ],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "skipped",
+      "mixedOutcomes": false,
+      "durationMs": 3000,
+      "error": "",
+      "triage": {
+        "category": "Needs investigation",
+        "confidence": "low",
+        "next": "Inspect the original run and available evidence. There is insufficient information to infer a cause."
+      },
+      "previousOutcome": "skipped",
+      "change": "unchanged"
+    },
+    {
+      "id": "c8b7a4eaf3622590",
+      "title": "Shop workflow > Known tax rounding limitation",
+      "file": "tests/shop.spec.js",
+      "line": 125,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "expected-failure"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "failed",
+          "durationMs": 425,
+          "errors": [
+            "Expected: 10.25\nReceived: 10.24"
+          ],
+          "failedSteps": [],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "failed"
+      ],
+      "outcome": "expected-failure",
+      "mixedOutcomes": false,
+      "durationMs": 425,
+      "error": "Expected: 10.25\nReceived: 10.24",
+      "triage": {
+        "category": "Assertion mismatch",
+        "confidence": "medium",
+        "next": "Compare expected and actual behavior against the requirement. Inspect trace, data, and locator before filing a defect."
+      },
+      "previousOutcome": "expected-failure",
+      "change": "unchanged"
+    },
+    {
+      "id": "00383e89f1b99636",
+      "title": "Shop workflow > Order helper parses a reference",
+      "file": "tests/shop.spec.js",
+      "line": 140,
+      "project": "chromium",
+      "tags": [
+        "@demo"
+      ],
+      "repetitions": 1,
+      "outcomes": [
+        "failed"
+      ],
+      "attempts": [
+        {
+          "repetition": 1,
+          "retry": 0,
+          "status": "failed",
+          "durationMs": 3000,
+          "errors": [
+            "TypeError: Cannot read properties of undefined (reading \"reference\")"
+          ],
+          "failedSteps": [
+            {
+              "title": "Validate expected state",
+              "error": "TypeError: Cannot read properties of undefined (reading \"reference\")"
+            }
+          ],
+          "attachments": []
+        }
+      ],
+      "expectedStatuses": [
+        "passed"
+      ],
+      "outcome": "failed",
+      "mixedOutcomes": false,
+      "durationMs": 3000,
+      "error": "TypeError: Cannot read properties of undefined (reading \"reference\")",
+      "triage": {
+        "category": "Runtime exception",
+        "confidence": "medium",
+        "next": "Inspect the stack and failing step to establish whether the exception originates in test code or the application."
+      },
+      "previousOutcome": null,
+      "change": "new-test"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "ee972744034889cf",
+      "category": "Assertion mismatch",
+      "confidence": "medium",
+      "next": "Compare expected and actual behavior against the requirement. Inspect trace, data, and locator before filing a defect.",
+      "example": "Error: expect(received).toBe(expected)\nExpected: 200\nReceived: 500",
+      "testIds": [
+        "17fa510e48f72d25"
+      ]
+    },
+    {
+      "id": "85e9a3407db58620",
+      "category": "Environment or network",
+      "confidence": "medium",
+      "next": "Check service reachability, baseURL, DNS, and CI network logs. This symptom does not establish an application defect.",
+      "example": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://demo.invalid/catalog",
+      "testIds": [
+        "22abe16ef3a834de",
+        "b3ca6335d599e419"
+      ]
+    },
+    {
+      "id": "6224363565a61b75",
+      "category": "Timeout",
+      "confidence": "low",
+      "next": "Review the failing step, trace, network, and page state. Check app readiness and locator correctness; do not simply increase the timeout.",
+      "example": "TimeoutError: locator.waitFor: Timeout 3000ms exceeded.",
+      "testIds": [
+        "af87797eac4c5f84"
+      ]
+    },
+    {
+      "id": "370ba636a899a9d2",
+      "category": "Runtime exception",
+      "confidence": "medium",
+      "next": "Inspect the stack and failing step to establish whether the exception originates in test code or the application.",
+      "example": "TypeError: Cannot read properties of undefined (reading \"reference\")",
+      "testIds": [
+        "00383e89f1b99636"
+      ]
+    }
+  ],
+  "notObserved": [
+    {
+      "id": "bd3a2f108a076299",
+      "title": "Shop workflow > Legacy address validation",
+      "project": "chromium",
+      "file": "tests/shop.spec.js",
+      "previousOutcome": "failed"
+    }
+  ],
+  "runErrors": [],
+  "warnings": [
+    "1 baseline tests are absent from this run. They are not counted as recovered."
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+qa-signal-report/
+test-results/
+playwright-report/
+results.json
+.env
+.env.*
+*.log
+.DS_Store

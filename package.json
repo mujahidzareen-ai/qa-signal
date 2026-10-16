@@ -1,0 +1,16 @@
+{
+  "name": "qa-signal-local",
+  "version": "0.1.0",
+  "description": "Local Playwright failure triage, run comparison, and evidence-based bug drafts.",
+  "type": "module",
+  "private": true,
+  "bin": { "qa-signal": "bin/qa-signal.js" },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node bin/qa-signal.js examples/current.json --baseline examples/baseline.json --out demo-report --label \"Fictional shop · Regression run\" --force"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT",
+  "author": "Mujahid Zareen",
+  "keywords": ["qa", "playwright", "triage", "test-report", "flaky-tests"]
+}

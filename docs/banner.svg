@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">QA Signal</title><desc id="desc">Local Playwright triage. Compare runs. Preserve evidence. Investigate with confidence.</desc>
+  <rect width="1200" height="360" rx="20" fill="#163c31"/>
+  <path d="M790 0v360M990 0v360M0 280h1200" stroke="#315348"/>
+  <text x="56" y="73" fill="#c4d8cd" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">TEST RESULTS → NEXT ACTIONS</text>
+  <text x="52" y="164" fill="#ffffff" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3">qa signal<tspan fill="#b6ec8a"> /</tspan></text>
+  <text x="56" y="218" fill="#c4d8cd" font-family="Arial,sans-serif" font-size="23">A clearer starting point for every failed run.</text>
+  <text x="56" y="326" fill="#c4d8cd" font-family="Arial,sans-serif" font-size="17">LOCAL FIRST</text><text x="270" y="326" fill="#c4d8cd" font-family="Arial,sans-serif" font-size="17">ZERO RUNTIME DEPENDENCIES</text>
+  <g fill="none" stroke="#b6ec8a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M840 174h38l25-62 36 120 30-58h53l30-40 30 40h53"/></g>
+  <text x="833" y="326" fill="#c4d8cd" font-family="Arial,sans-serif" font-size="17">BY MUJAHID ZAREEN</text>
+</svg>
